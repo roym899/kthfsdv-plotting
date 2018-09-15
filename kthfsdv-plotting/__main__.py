@@ -1,8 +1,4 @@
 
 
-def main():
-    print("Test")
-
-if __name__ == "__main__":
-    # execute only if run as a script
-    main()
+"""__main__.py: Entry point to the application.
+                __main__.py is exectuted when python3 dir_name gets executed"""
