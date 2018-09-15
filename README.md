@@ -16,7 +16,7 @@ Packages used
 
 ## TODO / Outline
 
-- [ ] Basic User Interface
+- [ ] Basic user interface
 - [ ] Basic plotting widget
 - [ ] Manual axis scaling
 - [ ] Manual periodicity setting
