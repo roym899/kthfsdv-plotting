@@ -16,10 +16,11 @@ Packages used
 
 ## TODO / Outline
 
-- [ ] Basic user interface
-- [ ] Basic plotting widget
+- [X] Basic user interface
+- [X] Basic plotting widget
 - [ ] Manual axis scaling
 - [ ] Manual periodicity setting
-- [ ] Real time plotting
+- [X] Real time plotting
 - [ ] Support for general functions
 - [ ] Automatic periodicity analysis
+- [ ] Multi function support
