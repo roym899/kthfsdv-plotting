@@ -14,6 +14,10 @@ Packages used
 - pyqtgraph for priving the plotting since it is made for real time plotting
 - numpy for storing and manipulating the data
 
+## How to run
+
+`python3 plotting`
+
 ## TODO / Outline
 
 - [X] Basic user interface
