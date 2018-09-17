@@ -22,3 +22,19 @@ class RTFunction:
         t = time.time()
         data = eval(self.expression)
         return t, data
+
+def get_periodicity(timestamps, data):
+    """Analysis given data points and returns None if no periodicity is found and the periodicity is it has been detected"""
+
+    total_time = timestamps[-1]-timestamps[0]
+    sample_time = total_time/timestamps.size
+    fft = np.abs(np.fft.rfft(data - np.mean(data), norm='ortho')) # remove 0 frequency
+    # self.plotting_widget.plot(fft)
+    # print(sample_time)
+    period = 1 / np.fft.fftfreq(fft.size)[np.argmax(fft)] * sample_time * 2
+
+    # check if enough data is collected to assume this period is correct
+    if total_time / period > 4.3:
+        return period
+
+    return None
