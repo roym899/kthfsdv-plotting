@@ -23,8 +23,8 @@ Packages used
 - [X] Basic user interface
 - [X] Basic plotting widget
 - [ ] Manual axis scaling
-- [ ] Manual periodicity setting
+- [X] Manual periodicity setting
 - [X] Real time plotting
 - [ ] Support for general functions
-- [ ] Automatic periodicity analysis
+- [X] Automatic periodicity analysis
 - [ ] Multi function support
