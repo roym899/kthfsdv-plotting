@@ -25,6 +25,6 @@ Packages used
 - [ ] Manual axis scaling
 - [X] Manual periodicity setting
 - [X] Real time plotting
-- [ ] Support for general functions
+- [X] Support for general functions
 - [X] Automatic periodicity analysis
 - [ ] Multi function support

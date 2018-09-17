@@ -45,7 +45,13 @@ class Interface(QtGui.QWidget):
         self.plotting_widget.resize(510, 460)
         self.plotting_widget.move(220, 10)
 
-        self.rt_function = rt_function.RTFunction('3*np.pi*np.exp(5*np.sin(2*np.pi*1*t))')
+        self.function_lineedit = QtGui.QLineEdit(self)
+        self.function_lineedit.resize(200, 30)
+        self.function_lineedit.move(10, 130)
+        default_function = '3*np.pi*np.exp(5*np.sin(2*np.pi*1*t))'
+        self.function_lineedit.setText(default_function)
+        self.function_lineedit.textChanged.connect(self.on_function_lineedit_changed)
+        self.rt_function = rt_function.RTFunction(default_function)
         self.show()
 
         self.timer = QtCore.QTimer()
@@ -108,3 +114,7 @@ class Interface(QtGui.QWidget):
 
         elif state == QtCore.Qt.Unchecked:
             self.period_spin_box.setEnabled(True)
+
+
+    def on_function_lineedit_changed(self, text):
+        self.rt_function.set_expression(text)

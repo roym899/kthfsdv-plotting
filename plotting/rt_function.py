@@ -5,6 +5,14 @@ class RTFunction:
     def __init__(self, expression):
         self.expression = expression
 
+    def set_expression(self, expression):
+        try:
+            t = time.time()
+            test = eval(expression)
+            self.expression = expression
+        except:
+            pass
+
     def back_sample(self, seconds, sample_frequency=50):
         """Samples back in time with a given frequency and for a specified duration"""
         current_time = time.time()
